@@ -1,9 +1,13 @@
 #include <iostream>
+#include "CashAssistant.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    CashAssistant cashAssistant;
+
+    cashAssistant.showUserMenu();
+
     return 0;
 }

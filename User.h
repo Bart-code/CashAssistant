@@ -1,5 +1,5 @@
-#ifndef EXPENSESMANAGER_H
-#define EXPENSESMANAGER_H
+#ifndef USER_H
+#define USER_H
 
 #include <iostream>
 

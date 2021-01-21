@@ -5,5 +5,11 @@
 
 using namespace std;
 
+class ExpenseManager
+{
+
+public:
+
+};
 
 #endif

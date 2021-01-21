@@ -5,6 +5,11 @@
 
 using namespace std;
 
+class UsersFile
+{
 
+public:
+
+};
 
 #endif

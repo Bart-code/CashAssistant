@@ -5,7 +5,12 @@
 
 using namespace std;
 
+class IncomesFile
+{
 
+public:
+
+};
 
 
 #endif

@@ -5,8 +5,11 @@
 
 using namespace std;
 
+class CashAssistant
+{
 
+public:
 
-// your declarations here
+};
 
 #endif

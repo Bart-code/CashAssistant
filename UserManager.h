@@ -5,7 +5,12 @@
 
 using namespace std;
 
+class UserManager
+{
 
+public:
+
+};
 
 
 #endif

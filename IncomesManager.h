@@ -5,6 +5,11 @@
 
 using namespace std;
 
+class IncomesManager
+{
 
+public:
+
+};
 
 #endif

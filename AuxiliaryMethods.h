@@ -5,8 +5,11 @@
 
 using namespace std;
 
+class AuxiliaryMethods
+{
 
+public:
 
-// your declarations here
+};
 
 #endif

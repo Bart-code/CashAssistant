@@ -15,6 +15,9 @@ class UserManager
 
 public:
     UserManager();
+    void registration( void );
+    int getNewUserId( void );
+    bool loginAlreadyExist( string );
 
 };
 

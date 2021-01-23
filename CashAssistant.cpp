@@ -15,5 +15,5 @@ void CashAssistant::showUserMenu( void )
 
 void CashAssistant::registration( void )
 {
-
+    userManager.registration();
 }

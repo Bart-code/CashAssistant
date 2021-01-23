@@ -12,6 +12,7 @@ class UsersFile : public FileXml
 
 public:
     UsersFile();
+    //addUser( void );
 
 };
 

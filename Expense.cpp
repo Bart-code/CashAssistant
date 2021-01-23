@@ -4,7 +4,7 @@ using namespace std;
 
 void Expense::setDate( int newDate)
 {
-    date= newDate;
+    date = newDate;
 }
 
 void Expense::setAmount( int newAmount)

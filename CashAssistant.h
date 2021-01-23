@@ -12,7 +12,7 @@ class CashAssistant
 
 public:
     void showUserMenu( void );
-
+    void registration( void );
 };
 
 #endif

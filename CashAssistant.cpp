@@ -12,3 +12,8 @@ void CashAssistant::showUserMenu( void )
     cout << "2. Registration" << endl << endl;
     cout << "9. End" << endl << endl;
 }
+
+void CashAssistant::registration( void )
+{
+
+}

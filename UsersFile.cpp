@@ -2,3 +2,7 @@
 
 using namespace std;
 
+UsersFile::UsersFile()
+{
+    usersFile = initFile("usersFile");
+}

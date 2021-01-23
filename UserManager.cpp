@@ -33,6 +33,7 @@ void UserManager::registration( void )
     cin >> userPassword;
     newUser.setPassword( userPassword );
     users.push_back( newUser );
+    usersFile.addUserToFile( newUser );
 }
 
 int UserManager::getNewUserId( void )

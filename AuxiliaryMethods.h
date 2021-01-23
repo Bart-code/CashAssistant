@@ -9,6 +9,8 @@ class AuxiliaryMethods
 {
 
 public:
+    static string convertIntegerToString( int );
+    static int convertStringToInteger( string );
 
 };
 

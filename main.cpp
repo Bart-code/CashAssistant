@@ -10,7 +10,7 @@ int main()
     cashAssistant.showUserMenu();
     cashAssistant.registration();
     cashAssistant.registration();
-    cashAssistant.registration();
+
 
     return 0;
 }

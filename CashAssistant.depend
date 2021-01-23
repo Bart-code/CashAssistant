@@ -3,10 +3,12 @@
 	<iostream>
 	"CashAssistant.h"
 
-1611250288 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.cpp
+1611425125 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.cpp
 	"AuxiliaryMethods.h"
+	<string>
+	<sstream>
 
-1611250564 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.h
+1611425034 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.h
 	<iostream>
 
 1611421801 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
@@ -59,7 +61,7 @@
 1611252684 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\user.h
 	<iostream>
 
-1611421751 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usermanager.cpp
+1611424939 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usermanager.cpp
 	"UserManager.h"
 
 1611422832 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usermanager.h
@@ -68,11 +70,13 @@
 	"User.h"
 	"UsersFile.h"
 
-1611418432 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usersfile.cpp
+1611425262 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usersfile.cpp
 	"UsersFile.h"
+	"AuxiliaryMethods.h"
 
-1611420997 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usersfile.h
+1611424939 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usersfile.h
 	"FileXml.h"
+	"User.h"
 
 1611418581 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\filexml.cpp
 	"FileXml.h"

@@ -1,8 +1,8 @@
 #ifndef USERSFILE_H
 #define USERSFILE_H
 
-//#include <iostream>
 #include "FileXml.h"
+#include "User.h"
 
 using namespace std;
 
@@ -12,8 +12,7 @@ class UsersFile : public FileXml
 
 public:
     UsersFile();
-    //addUser( void );
-
+    void addUserToFile( User );
 };
 
 #endif

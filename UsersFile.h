@@ -3,6 +3,7 @@
 
 #include "FileXml.h"
 #include "User.h"
+#include <vector>
 
 using namespace std;
 
@@ -13,6 +14,7 @@ class UsersFile : public FileXml
 public:
     UsersFile();
     void addUserToFile( User );
+    void loadUsersFromFile( vector <User> * );
 };
 
 #endif

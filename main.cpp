@@ -8,8 +8,10 @@ int main()
     CashAssistant cashAssistant;
 
     cashAssistant.showUserMenu();
-    cashAssistant.registration();
-    cashAssistant.registration();
+    cashAssistant.showAllUsers();
+    //cashAssistant.registration();
+    //cashAssistant.registration();
+
 
 
     return 0;

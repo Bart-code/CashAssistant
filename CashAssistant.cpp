@@ -3,6 +3,11 @@
 
 using namespace std;
 
+CashAssistant::CashAssistant()
+    {
+        userManager.loadUsersFromFile();
+    }
+
 void CashAssistant::showUserMenu( void )
 {
     system("cls");
@@ -17,3 +22,10 @@ void CashAssistant::registration( void )
 {
     userManager.registration();
 }
+
+void CashAssistant::showAllUsers( void )
+{
+    userManager.showAllUsers();
+}
+
+

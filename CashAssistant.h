@@ -11,8 +11,10 @@ class CashAssistant
     UserManager userManager;
 
 public:
+    CashAssistant();
     void showUserMenu( void );
     void registration( void );
+    void showAllUsers( void );
 };
 
 #endif

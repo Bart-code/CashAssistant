@@ -18,6 +18,8 @@ public:
     void registration( void );
     int getNewUserId( void );
     bool loginAlreadyExist( string );
+    void loadUsersFromFile( void );
+    void showAllUsers( void );
 
 };
 

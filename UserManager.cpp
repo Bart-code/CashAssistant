@@ -61,3 +61,58 @@ bool UserManager::loginAlreadyExist( string userLogin )
    }
    return false;
 }
+
+void UserManager::loadUsersFromFile( void )
+{
+    usersFile.loadUsersFromFile( &users );
+}
+
+void UserManager::showAllUsers( void )
+{
+   vector<User>::iterator itr = users.begin();
+   vector<User>::iterator endItr = users.end();
+
+   for( itr ; itr != endItr ; itr++ )
+   {
+       cout << (*itr).getId() << endl;
+       cout << (*itr).getName() << endl;
+       cout << (*itr).getSurname() << endl;
+       cout << (*itr).getLogin() << endl;
+       cout << (*itr).getPassword() << endl;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

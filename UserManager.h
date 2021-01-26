@@ -22,6 +22,7 @@ public:
     void loadUsersFromFile( void );
     void showAllUsers( void );
     void logIn( void );
+    int getLoggedUserId ( void );
 
 };
 

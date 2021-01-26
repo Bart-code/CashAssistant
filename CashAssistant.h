@@ -16,6 +16,8 @@ public:
     void registration( void );
     void showAllUsers( void );
     void logIn( void );
+    void showLoggedUserMenu( void );
+    bool isUserLogged( void );
 
 };
 

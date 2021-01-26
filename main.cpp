@@ -1,18 +1,74 @@
 #include <iostream>
 #include "CashAssistant.h"
+#include "IncomesManager.h"
+#include "ExpensesManager.h"
 
 using namespace std;
 
 int main()
 {
     CashAssistant cashAssistant;
-    int userChoseOption = 0;
+    int userChoiceOption;
+    while( true )
+    {
+        cashAssistant.showUserMenu();
+        cout << "Your choice: ";
+        cin >> userChoiceOption ;
+        switch( userChoiceOption )
+        {
+            case 1:
+                {
+                    cashAssistant.logIn();
+                    IncomesManager * incomesManager = new IncomesManager;
+                    ExpenseManager * expenceManager = new ExpenseManager;
+                    int userLoggedChoiceOption;
+                    while( cashAssistant.isUserLogged())
+                    {
+                        cashAssistant.showLoggedUserMenu();
+                        cin >> userLoggedChoiceOption ;
+                        switch( userLoggedChoiceOption )
+                        {
+                        case 1:
+                                break;
+                        case 2:
+                                break;
+                        case 3:
+                                break;
+                        case 4:
+                                break;
+                        case 5:
+                                break;
+                        case 6:
+                                break;
+                        case 7:
+                                break;
+                        default:
+                            cout << "Your choice is not menu option" << endl;
+                            system("pause");
+                            break;
+                        }
+                    }
+                    delete incomesManager;
+                    delete expenceManager;
+                    break;
+                }
 
-    cashAssistant.showUserMenu();
-    cashAssistant.showAllUsers();
-    //cashAssistant.registration();
-    cashAssistant.logIn();
-
+            case 2:
+                    cashAssistant.registration();
+                    break;
+            case 3:
+                    cashAssistant.showAllUsers();
+                    system("pause");
+                    break;
+            case 9:
+                    exit(0);
+                    break;
+            default:
+                    cout << "Your choice is not menu option" << endl;
+                    system("pause");
+                    break;
+        }
+    }
 
     return 0;
 }

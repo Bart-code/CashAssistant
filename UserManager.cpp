@@ -45,7 +45,6 @@ int UserManager::getNewUserId( void )
         itr--;
         int newId = (*itr).getId();
         newId++;
-        cout << newId;
         return newId;
     }
 }
@@ -119,8 +118,11 @@ void UserManager::logIn( void )
     cout << "No users with this login" << endl << endl;
     system("pause");
     return ;
+}
 
-
+int UserManager::getLoggedUserId ( void )
+{
+    return loggedUserId;
 }
 
 

@@ -28,4 +28,8 @@ void CashAssistant::showAllUsers( void )
     userManager.showAllUsers();
 }
 
+void CashAssistant::logIn( void )
+{
+   userManager.logIn();
+}
 

@@ -15,6 +15,8 @@ public:
     void showUserMenu( void );
     void registration( void );
     void showAllUsers( void );
+    void logIn( void );
+
 };
 
 #endif

@@ -82,6 +82,46 @@ void UserManager::showAllUsers( void )
    }
 }
 
+void UserManager::logIn( void )
+{
+    string login = "", password = "";;
+    system("cls");
+    cout << "Logging" << endl;
+    cout << "-----------------------------" << endl << endl;
+    cout << "Enter your login:" << endl;
+    cin >> login;
+
+    vector <User>::iterator itr = users.begin();
+    while (itr != users.end())
+    {
+        if ((*itr).getLogin() == login)
+        {
+            for (int triesCount = 3; triesCount > 0; triesCount--)
+            {
+                cout << "Enter password. Tries left: " << triesCount << ": ";
+                cin >> password;
+
+                if ((*itr).getPassword() == password)
+                {
+                    cout << endl << "Login succes !." << endl << endl;
+                    system("pause");
+                    loggedUserId = (*itr).getId();
+                    return ;
+                }
+                else cout << "Wrong password !"<<endl;
+            }
+            cout << "Wrong password entered 3 times !" << endl;
+            system("pause");
+            return;
+        }
+        itr++;
+    }
+    cout << "No users with this login" << endl << endl;
+    system("pause");
+    return ;
+
+
+}
 
 
 

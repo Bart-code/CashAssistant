@@ -12,6 +12,7 @@ class UserManager
 {
     vector <User> users;
     UsersFile usersFile;
+    int loggedUserId;
 
 public:
     UserManager();
@@ -20,6 +21,7 @@ public:
     bool loginAlreadyExist( string );
     void loadUsersFromFile( void );
     void showAllUsers( void );
+    void logIn( void );
 
 };
 

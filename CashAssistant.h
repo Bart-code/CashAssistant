@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "UserManager.h"
+#include "IncomesManager.h"
 
 using namespace std;
 
@@ -18,6 +19,7 @@ public:
     void logIn( void );
     void showLoggedUserMenu( void );
     bool isUserLogged( void );
+    void addIncome( IncomesManager *);
 
 };
 

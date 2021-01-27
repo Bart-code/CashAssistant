@@ -22,7 +22,7 @@ int Income::getDate( void )
     return date;
 }
 
-int Income::getAmount( int )
+int Income::getAmount( void )
 {
     return amount;
 }

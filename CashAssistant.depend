@@ -13,13 +13,14 @@
 1611425034 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.h
 	<iostream>
 
-1611681196 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
+1611770368 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
 	"CashAssistant.h"
 	<cstdlib>
 
-1611681196 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.h
+1611770540 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.h
 	<iostream>
 	"UserManager.h"
+	"IncomesManager.h"
 
 1611253268 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expense.cpp
 	"Expense.h"
@@ -39,23 +40,29 @@
 1611250565 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.h
 	<iostream>
 
-1611253181 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\income.cpp
+1611770997 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\income.cpp
 	"Income.h"
 
-1611253181 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\income.h
+1611770989 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\income.h
 	<iostream>
 
-1611250288 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesfile.cpp
+1611770951 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesfile.cpp
 	"IncomesFile.h"
+	"AuxiliaryMethods.h"
 
-1611250565 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesfile.h
+1611770615 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesfile.h
 	<iostream>
+	"Income.h"
+	"FileXml.h"
 
 1611250288 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.cpp
 	"IncomesManager.h"
 
-1611250565 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.h
+1611770567 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.h
 	<iostream>
+	<vector>
+	"Income.h"
+	"IncomesFile.h"
 
 1611252730 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\user.cpp
 	"User.h"

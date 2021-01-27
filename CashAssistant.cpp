@@ -4,9 +4,9 @@
 using namespace std;
 
 CashAssistant::CashAssistant()
-    {
-        userManager.loadUsersFromFile();
-    }
+{
+    userManager.loadUsersFromFile();
+}
 
 void CashAssistant::showUserMenu( void )
 {
@@ -52,5 +52,10 @@ bool CashAssistant::isUserLogged( void )
 {
     if( userManager.getLoggedUserId()) return true;
     return false;
+}
+
+void CashAssistant::addIncome( IncomesManager * incomesManager )
+{
+    incomesManager -> addIncome();
 }
 

@@ -29,6 +29,7 @@ int main()
                         switch( userLoggedChoiceOption )
                         {
                         case 1:
+                            cashAssistant.addIncome( incomesManager );
                                 break;
                         case 2:
                                 break;

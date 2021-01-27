@@ -8,7 +8,7 @@ IncomesManager::IncomesManager( void )
 
 }
 
-void IncomesManager::addIncome( void )
+void IncomesManager::addIncome( int userId)
 {
     Income newIncome;
     string date, item, amount;
@@ -22,6 +22,6 @@ void IncomesManager::addIncome( void )
     newIncome.setItem( item );
     newIncome.setAmount( AuxiliaryMethods::convertStringToInteger( amount ) );
     incomes.push_back( newIncome );
-    incomesFile.addIncomeToFile( &newIncome );
+    incomesFile.addIncomeToFile( &newIncome, userId );
 
 }

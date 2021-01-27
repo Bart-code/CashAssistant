@@ -13,7 +13,7 @@ class IncomesFile : public FileXml
 
 public:
     IncomesFile();
-    void addIncomeToFile( Income * );
+    void addIncomeToFile( Income * , int);
 
 
 };

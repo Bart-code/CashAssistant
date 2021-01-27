@@ -56,6 +56,6 @@ bool CashAssistant::isUserLogged( void )
 
 void CashAssistant::addIncome( IncomesManager * incomesManager )
 {
-    incomesManager -> addIncome();
+    incomesManager -> addIncome( userManager.getLoggedUserId());
 }
 

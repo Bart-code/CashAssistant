@@ -17,7 +17,7 @@ public:
 
     IncomesManager( void );
 
-    void addIncome( void );
+    void addIncome( int );
 
 
 };

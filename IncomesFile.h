@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Income.h"
 #include "FileXml.h"
+#include <vector>
 
 using namespace std;
 
@@ -13,8 +14,8 @@ class IncomesFile : public FileXml
 
 public:
     IncomesFile();
-    void addIncomeToFile( Income * , int);
-
+    void addIncomeToFile( Income , int);
+    void loadIncomesFromFile(  vector <Income> * , int );
 
 };
 

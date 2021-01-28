@@ -21,8 +21,9 @@ public:
     bool loginAlreadyExist( string );
     void loadUsersFromFile( void );
     void showAllUsers( void );
-    void logIn( void );
+    int logIn( void );
     int getLoggedUserId ( void );
+    void setLoggedUserId ( int );
 
 };
 

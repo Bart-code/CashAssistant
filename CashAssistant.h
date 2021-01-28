@@ -4,12 +4,16 @@
 #include <iostream>
 #include "UserManager.h"
 #include "IncomesManager.h"
+#include "ExpensesManager.h"
 
 using namespace std;
 
 class CashAssistant
 {
     UserManager userManager;
+    IncomesManager * incomesManager;
+    ExpenseManager * expenceManager;
+    int loggedUserId;
 
 public:
     CashAssistant();
@@ -19,7 +23,11 @@ public:
     void logIn( void );
     void showLoggedUserMenu( void );
     bool isUserLogged( void );
-    void addIncome( IncomesManager *);
+    void addIncome();
+    void showAllLoadedIncomes( void );
+    void incomesExpencesManagersInit( void );
+    void logout ( void );
+
 
 };
 

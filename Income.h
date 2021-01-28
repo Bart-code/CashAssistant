@@ -11,7 +11,13 @@ class Income
         string item;
 
 public:
+    Income()
+    : date( 0 ),
+    amount( 0 ),
+    item( "Nic" )
+    {
 
+    }
     void setDate( int );
     void setAmount( int);
     void setItem( string );

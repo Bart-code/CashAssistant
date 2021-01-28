@@ -15,10 +15,11 @@ class IncomesManager
 
 public:
 
-    IncomesManager( void );
+    IncomesManager( int );
 
     void addIncome( int );
-
+    void showAllIncomes( void );
+    void setLoggedUserId( int );
 
 };
 

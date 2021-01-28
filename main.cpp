@@ -19,17 +19,16 @@ int main()
             case 1:
                 {
                     cashAssistant.logIn();
-                    IncomesManager * incomesManager = new IncomesManager;
-                    ExpenseManager * expenceManager = new ExpenseManager;
+                    cashAssistant.incomesExpencesManagersInit();
                     int userLoggedChoiceOption;
                     while( cashAssistant.isUserLogged())
                     {
                         cashAssistant.showLoggedUserMenu();
-                        cin >> userLoggedChoiceOption ;
+                        cin >> userLoggedChoiceOption;
                         switch( userLoggedChoiceOption )
                         {
                         case 1:
-                            cashAssistant.addIncome( incomesManager );
+                            cashAssistant.addIncome();
                                 break;
                         case 2:
                                 break;
@@ -42,6 +41,10 @@ int main()
                         case 6:
                                 break;
                         case 7:
+                                cashAssistant.logout();
+                                break;
+                        case 8:
+                                cashAssistant.showAllLoadedIncomes();
                                 break;
                         default:
                             cout << "Your choice is not menu option" << endl;
@@ -49,8 +52,6 @@ int main()
                             break;
                         }
                     }
-                    delete incomesManager;
-                    delete expenceManager;
                     break;
                 }
 

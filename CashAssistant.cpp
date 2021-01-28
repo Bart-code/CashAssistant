@@ -6,6 +6,7 @@ using namespace std;
 CashAssistant::CashAssistant()
 {
     userManager.loadUsersFromFile();
+    loggedUserId = 0;
 }
 
 void CashAssistant::showUserMenu( void )
@@ -31,7 +32,7 @@ void CashAssistant::showAllUsers( void )
 
 void CashAssistant::logIn( void )
 {
-   userManager.logIn();
+   loggedUserId = userManager.logIn();
 }
 
 void CashAssistant::showLoggedUserMenu( void )
@@ -44,7 +45,8 @@ void CashAssistant::showLoggedUserMenu( void )
     cout << "3. Balance sheet for current month" << endl;
     cout << "4. Balance sheet for previous month" << endl;
     cout << "5. Balance sheet for the custom period" << endl;
-    cout << "6. Change password" << endl<<endl;
+    cout << "6. Change password" << endl;
+    cout << "8. Show all incomes" << endl<<endl;
     cout << "7. Logout" << endl;
 }
 
@@ -54,8 +56,24 @@ bool CashAssistant::isUserLogged( void )
     return false;
 }
 
-void CashAssistant::addIncome( IncomesManager * incomesManager )
+void CashAssistant::addIncome( void )
 {
     incomesManager -> addIncome( userManager.getLoggedUserId());
 }
 
+void CashAssistant::showAllLoadedIncomes( void )
+{
+    incomesManager -> showAllIncomes();
+}
+
+void CashAssistant::incomesExpencesManagersInit( void )
+{
+    incomesManager = new IncomesManager( loggedUserId );
+    expenceManager = new ExpenseManager;
+}
+
+void CashAssistant::logout( void )
+{
+    loggedUserId = 0;
+    userManager.setLoggedUserId ( 0 );
+}

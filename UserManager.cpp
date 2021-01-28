@@ -81,7 +81,7 @@ void UserManager::showAllUsers( void )
    }
 }
 
-void UserManager::logIn( void )
+int UserManager::logIn( void )
 {
     string login = "", password = "";;
     system("cls");
@@ -105,24 +105,29 @@ void UserManager::logIn( void )
                     cout << endl << "Login succes !." << endl << endl;
                     system("pause");
                     loggedUserId = (*itr).getId();
-                    return ;
+                    return loggedUserId;
                 }
                 else cout << "Wrong password !"<<endl;
             }
             cout << "Wrong password entered 3 times !" << endl;
             system("pause");
-            return;
+            return 0;
         }
         itr++;
     }
     cout << "No users with this login" << endl << endl;
     system("pause");
-    return ;
+    return 0;
 }
 
 int UserManager::getLoggedUserId ( void )
 {
     return loggedUserId;
+}
+
+void UserManager::setLoggedUserId ( int userId )
+{
+    loggedUserId = 0;
 }
 
 

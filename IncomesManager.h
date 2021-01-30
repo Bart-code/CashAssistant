@@ -20,6 +20,7 @@ public:
     void addIncome( int );
     void showAllIncomes( void );
     void setLoggedUserId( int );
+    string enterDate( void );
 
 };
 

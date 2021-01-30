@@ -11,15 +11,16 @@ IncomesManager::IncomesManager( int userId)
 void IncomesManager::addIncome( int userId)
 {
     Income newIncome;
-    string item;
-    int date, amount;
-    cout << "Enter date of income: ";
-    cin >> date;
+    string item, dateString;
+    int dateInteger, amount;
+    cout << "Enter date of income (yyyy-mm-dd format): ";
+    cin >> dateString;
     cout << "Enter describe of income: ";
     cin >> item;
     cout << "Enter income amount: ";
     cin >> amount;
-    newIncome.setDate( date );
+    dateInteger = AuxiliaryMethods::getIntegerDateFromString( dateString );
+    newIncome.setDate( dateInteger );
     newIncome.setItem( item );
     newIncome.setAmount( amount );
 
@@ -31,12 +32,14 @@ void IncomesManager::showAllIncomes( void )
 {
    vector<Income>::iterator itr = incomes.begin();
    vector<Income>::iterator endItr = incomes.end();
+   string dateString = "";
 
    for( itr ; itr != endItr ; itr++ )
    {
-       cout << endl << "Date: " << (*itr).getDate() << endl;
-       cout << "Item" << (*itr).getItem() << endl;
-       cout << "Amount" << (*itr).getAmount() << endl << endl;
+       dateString = AuxiliaryMethods::getStringDateFromInteger( (*itr).getDate() );
+       cout << endl << "Date: " << dateString << endl;
+       cout << "Item: " << (*itr).getItem() << endl;
+       cout << "Amount: " << (*itr).getAmount() << endl << endl;
    }
 
    system("pause");

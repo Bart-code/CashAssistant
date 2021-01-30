@@ -11,6 +11,8 @@ class AuxiliaryMethods
 public:
     static string convertIntegerToString( int );
     static int convertStringToInteger( string );
+    static int getIntegerDateFromString( string );
+    static string getStringDateFromInteger( int );
 
 };
 

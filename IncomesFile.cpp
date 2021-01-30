@@ -10,6 +10,7 @@ IncomesFile::IncomesFile()
 
 void IncomesFile::addIncomeToFile( Income income, int userId )
 {
+    string dateString = AuxiliaryMethods::getStringDateFromInteger( income.getDate() );
     incomesFile.ResetPos();
     incomesFile.FindElem();
     incomesFile.IntoElem();
@@ -17,7 +18,7 @@ void IncomesFile::addIncomeToFile( Income income, int userId )
     incomesFile.FindElem();
     incomesFile.IntoElem();
     incomesFile.AddElem( "UserId" , AuxiliaryMethods::convertIntegerToString( userId ) );
-    incomesFile.AddElem( "Date" , AuxiliaryMethods::convertIntegerToString( income.getDate() ) );
+    incomesFile.AddElem( "Date" , dateString );
     incomesFile.AddElem( "Item" , income.getItem() );
     incomesFile.AddElem( "Amount" , AuxiliaryMethods::convertIntegerToString( income.getAmount() ));
     incomesFile.Save( "incomesFile.xml" );
@@ -27,6 +28,7 @@ void IncomesFile::loadIncomesFromFile(  vector <Income> * incomesVector , int lo
 {
     Income currentIncome;
     string userId, dateString, amountString;
+    int dateInteger = 0;
     incomesFile.ResetPos();
     incomesFile.FindElem();
     incomesFile.IntoElem();
@@ -39,7 +41,8 @@ void IncomesFile::loadIncomesFromFile(  vector <Income> * incomesVector , int lo
         {
             incomesFile.FindElem("Date");
             dateString = incomesFile.GetData();
-            currentIncome.setDate( AuxiliaryMethods::convertStringToInteger( dateString) );
+            dateInteger = AuxiliaryMethods::getIntegerDateFromString( dateString );
+            currentIncome.setDate( dateInteger );
             incomesFile.FindElem("Item");
             currentIncome.setItem( incomesFile.GetData() );
             incomesFile.FindElem("Amount");

@@ -51,6 +51,30 @@ void UsersFile::loadUsersFromFile( vector <User> * usersVector)
     }
 }
 
+void UsersFile::changePassword( int userId, string newPassword )
+{
+    string currentUserId;
+    string searchedUserId = AuxiliaryMethods::convertIntegerToString( userId );
+    usersFile.ResetPos();
+    usersFile.FindElem();
+    usersFile.IntoElem();
+    while ( usersFile.FindElem("User") )
+    {
+        usersFile.IntoElem();
+        usersFile.FindElem("Id");
+        currentUserId = usersFile.GetData();
+        if( currentUserId == searchedUserId)
+        {
+            usersFile.FindElem("Password");
+            usersFile.RemoveElem();
+            usersFile.AddElem( "Password" , newPassword );
+            usersFile.Save( "usersFile.xml" );
+            return;
+        }
+        usersFile.OutOfElem();
+    }
+}
+
 
 
 

@@ -87,3 +87,8 @@ void CashAssistant::logout( void )
     loggedUserId = 0;
     userManager.setLoggedUserId ( 0 );
 }
+
+void CashAssistant::changePassword( void )
+{
+    userManager.changePassword();
+}

@@ -24,6 +24,7 @@ public:
     int logIn( void );
     int getLoggedUserId ( void );
     void setLoggedUserId ( int );
+    void changePassword( void );
 
 };
 

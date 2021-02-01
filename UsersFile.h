@@ -15,6 +15,7 @@ public:
     UsersFile();
     void addUserToFile( User );
     void loadUsersFromFile( vector <User> * );
+    void changePassword( int, string );
 };
 
 #endif

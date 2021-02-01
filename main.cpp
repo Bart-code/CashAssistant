@@ -40,6 +40,7 @@ int main()
                         case 5:
                                 break;
                         case 6:
+                            cashAssistant.changePassword();
                                 break;
                         case 7:
                                 cashAssistant.logout();

@@ -120,14 +120,32 @@ int UserManager::logIn( void )
     return 0;
 }
 
-int UserManager::getLoggedUserId ( void )
+int UserManager::getLoggedUserId( void )
 {
     return loggedUserId;
 }
 
-void UserManager::setLoggedUserId ( int userId )
+void UserManager::setLoggedUserId( int userId )
 {
     loggedUserId = 0;
+}
+
+void UserManager::changePassword()
+{
+    string newPassword = "";
+    cout << "Enter new password: ";
+    cin >> newPassword;
+    for (vector <User>::iterator itr = users.begin(); itr != users.end(); itr++)
+    {
+        if (itr -> getId() == loggedUserId)
+        {
+            itr -> setPassword( newPassword );
+            cout << "Password was changed" << endl << endl;
+            system("pause");
+            usersFile.changePassword( itr -> getId() , newPassword);
+            break;
+        }
+    }
 }
 
 

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1612202103 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\main.cpp
+1612203973 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\main.cpp
 	<iostream>
 	"CashAssistant.h"
 	"IncomesManager.h"
@@ -15,11 +15,11 @@
 	<time.h>
 	"windows.h"
 
-1612202103 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
+1612203013 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
 	"CashAssistant.h"
 	<cstdlib>
 
-1612202103 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.h
+1612203019 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.h
 	<iostream>
 	"UserManager.h"
 	"IncomesManager.h"
@@ -83,20 +83,20 @@
 1611252684 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\user.h
 	<iostream>
 
-1611858217 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usermanager.cpp
+1612203870 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usermanager.cpp
 	"UserManager.h"
 
-1611858217 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usermanager.h
+1612203045 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usermanager.h
 	<iostream>
 	<vector>
 	"User.h"
 	"UsersFile.h"
 
-1611601761 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usersfile.cpp
+1612204335 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usersfile.cpp
 	"UsersFile.h"
 	"AuxiliaryMethods.h"
 
-1611601314 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usersfile.h
+1612203768 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usersfile.h
 	"FileXml.h"
 	"User.h"
 	<vector>

@@ -31,6 +31,7 @@ int main()
                             cashAssistant.addIncome();
                                 break;
                         case 2:
+                            cashAssistant.addExpense();
                                 break;
                         case 3:
                                 break;

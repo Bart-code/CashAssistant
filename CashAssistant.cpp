@@ -66,10 +66,20 @@ void CashAssistant::showAllLoadedIncomes( void )
     incomesManager -> showAllIncomes();
 }
 
+void CashAssistant::addExpense( void )
+{
+    expensesManager -> addExpense( userManager.getLoggedUserId());
+}
+
+void CashAssistant::showAllLoadedExpenses( void )
+{
+    expensesManager -> showAllExpenses();
+}
+
 void CashAssistant::incomesExpencesManagersInit( void )
 {
     incomesManager = new IncomesManager( loggedUserId );
-    expenceManager = new ExpenseManager;
+    expensesManager = new ExpensesManager( loggedUserId );
 }
 
 void CashAssistant::logout( void )

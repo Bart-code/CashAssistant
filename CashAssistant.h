@@ -12,7 +12,7 @@ class CashAssistant
 {
     UserManager userManager;
     IncomesManager * incomesManager;
-    ExpenseManager * expenceManager;
+    ExpensesManager * expensesManager;
     int loggedUserId;
 
 public:
@@ -25,6 +25,8 @@ public:
     bool isUserLogged( void );
     void addIncome();
     void showAllLoadedIncomes( void );
+    void addExpense();
+    void showAllLoadedExpenses( void );
     void incomesExpencesManagersInit( void );
     void logout ( void );
 

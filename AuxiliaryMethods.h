@@ -19,6 +19,7 @@ public:
     static int getDaysCountSelectedMonth( string );
     static int getLastDayDateCurrentMonth( void );
     static string getCurrentDateTime( void );
+    static string enterDate( void );
 
 };
 

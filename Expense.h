@@ -16,7 +16,7 @@ public:
     void setAmount( int);
     void setItem( string );
     int getDate( void );
-    int getAmount( int );
+    int getAmount( void );
     string getItem( void );
 
 };

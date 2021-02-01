@@ -22,7 +22,7 @@ int Expense::getDate( void )
     return date;
 }
 
-int Expense::getAmount( int )
+int Expense::getAmount( void )
 {
     return amount;
 }

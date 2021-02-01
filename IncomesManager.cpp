@@ -15,7 +15,7 @@ void IncomesManager::addIncome( int userId)
     char userChoiceOption;
     int dateInteger, amount;
 
-    dateString = enterDate();
+    dateString = AuxiliaryMethods::enterDate();
     if( dateString == "" ) return;
     cout << "Enter describe of income: ";
     cin >> item;
@@ -30,44 +30,6 @@ void IncomesManager::addIncome( int userId)
     incomesFile.addIncomeToFile( newIncome, userId );
 }
 
-string IncomesManager::enterDate( void )
-{
-    string dateString;
-    char userChoiceOption;
-
-    cout << endl << "With current date ? (y / n): ";
-    while(true)
-    {
-        cin >> userChoiceOption;
-        if( userChoiceOption == 'y' || userChoiceOption == 'Y')
-        {
-            dateString = AuxiliaryMethods::getCurrentDateTime();
-            return dateString;
-        }
-        else if( userChoiceOption == 'n' || userChoiceOption == 'N' )
-        {
-            while ( true )
-            {
-               cout << endl << "Enter date of income (yyyy-mm-dd format): ";
-               cin >> dateString;
-               if ( AuxiliaryMethods::isDateCorrect( dateString ) ) return dateString;
-               else
-               {
-                   cout << endl << "Try again ? (y / n): ";
-                   while (true )
-                   {
-                       cin >> userChoiceOption;
-                       if( userChoiceOption == 'y' || userChoiceOption == 'Y') break;
-                       else if( userChoiceOption == 'n' || userChoiceOption == 'N' ) return "";
-                       else cout << "Incorect option ! Enter 'y' or 'n' character: ";
-                   }
-
-               }
-            }
-        }
-        else cout << "Incorect option ! Enter 'y' or 'n' character";
-    }
-}
 
 void IncomesManager::showAllIncomes( void )
 {

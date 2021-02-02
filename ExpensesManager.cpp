@@ -10,9 +10,8 @@ ExpensesManager::ExpensesManager( int userId)
 void ExpensesManager::addExpense( int userId)
 {
     Expense newExpense;
-    string item, dateString;
-    char userChoiceOption;
-    int dateInteger, amount;
+    string item, dateString, amount;
+    int dateInteger;
 
     dateString = AuxiliaryMethods::enterDate();
     if( dateString == "" ) return;
@@ -23,7 +22,8 @@ void ExpensesManager::addExpense( int userId)
     dateInteger = AuxiliaryMethods::getIntegerDateFromString( dateString );
     newExpense.setDate( dateInteger );
     newExpense.setItem( item );
-    newExpense.setAmount( amount );
+    amount = AuxiliaryMethods::changeCommaToDot( amount );
+    newExpense.setAmount( AuxiliaryMethods::convertStringToFloat( amount ) );
 
     expenses.push_back( newExpense );
     expensesFile.addExpenseToFile( newExpense, userId );

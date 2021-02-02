@@ -7,16 +7,17 @@ using namespace std;
 
 class Expense
 {
-    int date, amount;
+    int date;
+    float amount;
     string item;
 
 public:
 
     void setDate( int );
-    void setAmount( int);
+    void setAmount( float);
     void setItem( string );
     int getDate( void );
-    int getAmount( void );
+    float getAmount( void );
     string getItem( void );
 
 };

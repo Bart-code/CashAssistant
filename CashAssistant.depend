@@ -5,15 +5,17 @@
 	"IncomesManager.h"
 	"ExpensesManager.h"
 
-1612200071 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.cpp
+1612291483 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.cpp
 	"AuxiliaryMethods.h"
 	<string>
 	<sstream>
+	<string>
 
-1612199975 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.h
+1612291338 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.h
 	<iostream>
 	<time.h>
 	"windows.h"
+	<string>
 
 1612203013 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
 	"CashAssistant.h"
@@ -25,13 +27,13 @@
 	"IncomesManager.h"
 	"ExpensesManager.h"
 
-1612201819 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expense.cpp
+1612289954 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expense.cpp
 	"Expense.h"
 
-1612201811 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expense.h
+1612289954 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expense.h
 	<iostream>
 
-1612201834 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesfile.cpp
+1612291584 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesfile.cpp
 	"ExpensesFile.h"
 	"AuxiliaryMethods.h"
 
@@ -41,7 +43,7 @@
 	"FileXml.h"
 	<vector>
 
-1612200479 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.cpp
+1612289954 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.cpp
 	"ExpensesManager.h"
 
 1612201440 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.h
@@ -51,13 +53,13 @@
 	<vector>
 	"AuxiliaryMethods.h"
 
-1611770997 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\income.cpp
+1612290244 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\income.cpp
 	"Income.h"
 
-1611856702 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\income.h
+1612290244 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\income.h
 	<iostream>
 
-1612018110 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesfile.cpp
+1612291584 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesfile.cpp
 	"IncomesFile.h"
 	"AuxiliaryMethods.h"
 
@@ -67,7 +69,7 @@
 	"FileXml.h"
 	<vector>
 
-1612199975 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.cpp
+1612290244 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.cpp
 	"IncomesManager.h"
 	"AuxiliaryMethods.h"
 
@@ -92,7 +94,7 @@
 	"User.h"
 	"UsersFile.h"
 
-1612204335 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usersfile.cpp
+1612204575 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\usersfile.cpp
 	"UsersFile.h"
 	"AuxiliaryMethods.h"
 

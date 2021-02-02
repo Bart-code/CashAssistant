@@ -7,7 +7,7 @@ void Income::setDate( int newDate)
     date= newDate;
 }
 
-void Income::setAmount( int newAmount)
+void Income::setAmount( float newAmount)
 {
     amount = newAmount;
 }
@@ -22,7 +22,7 @@ int Income::getDate( void )
     return date;
 }
 
-int Income::getAmount( void )
+float Income::getAmount( void )
 {
     return amount;
 }

@@ -20,7 +20,7 @@ void ExpensesFile::addExpenseToFile( Expense expense, int userId )
     expensesFile.AddElem( "UserId" , AuxiliaryMethods::convertIntegerToString( userId ) );
     expensesFile.AddElem( "Date" , dateString );
     expensesFile.AddElem( "Item" , expense.getItem() );
-    expensesFile.AddElem( "Amount" , AuxiliaryMethods::convertIntegerToString( expense.getAmount() ));
+    expensesFile.AddElem( "Amount" , AuxiliaryMethods::convertFloatToString( expense.getAmount() ));
     expensesFile.Save( "expensesFile.xml" );
 }
 
@@ -47,7 +47,7 @@ void ExpensesFile::loadExpensesFromFile(  vector <Expense> * expensesVector , in
             currentExpense.setItem( expensesFile.GetData() );
             expensesFile.FindElem("Amount");
             amountString = expensesFile.GetData();
-            currentExpense.setAmount( AuxiliaryMethods::convertStringToInteger( amountString ) );
+            currentExpense.setAmount( AuxiliaryMethods::convertStringToFloat( amountString ) );
             expensesVector -> push_back( currentExpense );
         }
         expensesFile.OutOfElem();

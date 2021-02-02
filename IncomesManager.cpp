@@ -11,9 +11,8 @@ IncomesManager::IncomesManager( int userId)
 void IncomesManager::addIncome( int userId)
 {
     Income newIncome;
-    string item, dateString;
-    char userChoiceOption;
-    int dateInteger, amount;
+    string item, dateString, amount;
+    int dateInteger;
 
     dateString = AuxiliaryMethods::enterDate();
     if( dateString == "" ) return;
@@ -24,7 +23,8 @@ void IncomesManager::addIncome( int userId)
     dateInteger = AuxiliaryMethods::getIntegerDateFromString( dateString );
     newIncome.setDate( dateInteger );
     newIncome.setItem( item );
-    newIncome.setAmount( amount );
+    amount = AuxiliaryMethods::changeCommaToDot( amount );
+    newIncome.setAmount( AuxiliaryMethods::convertStringToFloat( amount ) );
 
     incomes.push_back( newIncome );
     incomesFile.addIncomeToFile( newIncome, userId );

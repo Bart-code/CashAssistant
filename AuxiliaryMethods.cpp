@@ -1,6 +1,7 @@
 #include "AuxiliaryMethods.h"
 #include <string>
 #include <sstream>
+#include <string>
 
 using namespace std;
 
@@ -20,6 +21,13 @@ int AuxiliaryMethods::convertStringToInteger(string number)
     iss >> numberInt;
 
     return numberInt;
+}
+
+string AuxiliaryMethods::loadLine()
+{
+    string line = "";
+    getline(cin, line);
+    return line;
 }
 
 int AuxiliaryMethods::getIntegerDateFromString(string dateInString)
@@ -152,4 +160,40 @@ string AuxiliaryMethods::enterDate( void )
         }
         else cout << "Incorect option ! Enter 'y' or 'n' character";
     }
+}
+
+string AuxiliaryMethods::changeCommaToDot( string withComma)
+{
+    int wordLenhgt = withComma.length();
+    if( ! withComma.empty() )
+    {
+        for( int i=0 ; i < wordLenhgt ; i++)
+        {
+            if( withComma[i] == ',')
+            {
+                withComma[i] = '.';
+                return withComma;
+            }
+        }
+    }
+    return withComma;
+}
+
+float AuxiliaryMethods::convertStringToFloat( string wordToConvert)
+{
+    float convertedFloat;
+    int n = wordToConvert.length();
+    char char_array[n + 1];
+
+    strcpy(char_array, wordToConvert.c_str());
+    convertedFloat = atof( char_array );
+    return convertedFloat;
+}
+
+string AuxiliaryMethods::convertFloatToString( float wordToConvert )
+{
+    ostringstream ss;
+    ss << wordToConvert;
+    string str = ss.str();
+    return str;
 }

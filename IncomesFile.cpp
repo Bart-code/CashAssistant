@@ -20,7 +20,7 @@ void IncomesFile::addIncomeToFile( Income income, int userId )
     incomesFile.AddElem( "UserId" , AuxiliaryMethods::convertIntegerToString( userId ) );
     incomesFile.AddElem( "Date" , dateString );
     incomesFile.AddElem( "Item" , income.getItem() );
-    incomesFile.AddElem( "Amount" , AuxiliaryMethods::convertIntegerToString( income.getAmount() ));
+    incomesFile.AddElem( "Amount" , AuxiliaryMethods::convertFloatToString( income.getAmount() ));
     incomesFile.Save( "incomesFile.xml" );
 }
 
@@ -47,7 +47,7 @@ void IncomesFile::loadIncomesFromFile(  vector <Income> * incomesVector , int lo
             currentIncome.setItem( incomesFile.GetData() );
             incomesFile.FindElem("Amount");
             amountString = incomesFile.GetData();
-            currentIncome.setAmount( AuxiliaryMethods::convertStringToInteger( amountString ) );
+            currentIncome.setAmount( AuxiliaryMethods::convertStringToFloat( amountString ) );
             incomesVector -> push_back( currentIncome );
         }
         incomesFile.OutOfElem();

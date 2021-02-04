@@ -19,7 +19,11 @@ public:
 
     void addIncome( int );
     void showAllIncomes( void );
-
+    void showChosenIncomes( vector<Income> * vectorToShow );
+    vector <Income> selectIncomesBetweenBateBorders( int , int );
+    void showSortedIncomesBetweenDateBorders( int , int );
+    int sumIncomesAmountsBetweenDateBorders( int , int );
+    vector <Income> sortIncomesVector( vector <Income> );
 };
 
 #endif

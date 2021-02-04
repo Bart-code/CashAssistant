@@ -34,6 +34,7 @@ int main()
                             cashAssistant.addExpense();
                                 break;
                         case 3:
+                            cashAssistant.balanceSheetForCurrentMonth();
                                 break;
                         case 4:
                                 break;

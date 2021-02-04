@@ -30,6 +30,7 @@ public:
     void incomesExpencesManagersInit( void );
     void logout ( void );
     void changePassword( void );
+    void balanceSheetForCurrentMonth( void );
 
 };
 

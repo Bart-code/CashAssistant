@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1612203973 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\main.cpp
+1612458937 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\main.cpp
 	<iostream>
 	"CashAssistant.h"
 	"IncomesManager.h"
 	"ExpensesManager.h"
 
-1612291483 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.cpp
+1612291635 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\auxiliarymethods.cpp
 	"AuxiliaryMethods.h"
 	<string>
 	<sstream>
@@ -17,11 +17,11 @@
 	"windows.h"
 	<string>
 
-1612203013 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
+1612461149 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
 	"CashAssistant.h"
 	<cstdlib>
 
-1612203019 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.h
+1612294712 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.h
 	<iostream>
 	"UserManager.h"
 	"IncomesManager.h"
@@ -69,11 +69,11 @@
 	"FileXml.h"
 	<vector>
 
-1612290244 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.cpp
+1612462574 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.cpp
 	"IncomesManager.h"
 	"AuxiliaryMethods.h"
 
-1612199975 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.h
+1612462464 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.h
 	<iostream>
 	<vector>
 	"Income.h"

@@ -19,6 +19,11 @@ public:
     ExpensesManager( int );
     void addExpense( int );
     void showAllExpenses( void );
+    vector <Expense> selectExpensesBetweenBateBorders( int , int );
+    void showSortedExpensesBetweenDateBorders( int , int );
+    int sumExpensesAmountsBetweenDateBorders( int , int );
+    vector <Expense> sortExpensesVector( vector <Expense> );
+    void showChosenExpenses( vector<Expense> * );
 };
 
 #endif

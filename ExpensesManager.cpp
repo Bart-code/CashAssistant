@@ -46,3 +46,66 @@ void ExpensesManager::showAllExpenses( void )
 
    system("pause");
 }
+
+void ExpensesManager::showChosenExpenses( vector<Expense> * vectorToShow )
+{
+   vector<Expense>::iterator itr = vectorToShow -> begin();
+   vector<Expense>::iterator endItr = vectorToShow -> end();
+   string dateString = "";
+
+   for( itr ; itr != endItr ; itr++ )
+   {
+       dateString = AuxiliaryMethods::getStringDateFromInteger( (*itr).getDate() );
+       cout << endl << "Date: " << dateString << endl;
+       cout << "Item: " << (*itr).getItem() << endl;
+       cout << "Amount: " << (*itr).getAmount() << " zl" << endl << endl;
+   }
+}
+
+vector <Expense> ExpensesManager::selectExpensesBetweenBateBorders( int downBorder, int topBorder)
+{
+    vector <Expense> selectedExpenses;
+    for (vector <Expense>::iterator itr = expenses.begin(); itr != expenses.end(); itr++)
+    {
+        if( itr -> getDate() >= downBorder && itr -> getDate() <= topBorder )
+            selectedExpenses.push_back( *itr );
+    }
+    return selectedExpenses;
+}
+
+vector <Expense> ExpensesManager::sortExpensesVector( vector <Expense> vectorToSort)
+{
+    Expense temp;
+    for (vector <Expense>::iterator itr1 = vectorToSort.begin(); itr1 != vectorToSort.end(); itr1++)
+    {
+        for (vector <Expense>::iterator itr2 = vectorToSort.begin(); itr2 != (vectorToSort.end() - 1); itr2++)
+        {
+            if( itr2 -> getDate() > (itr2 + 1) -> getDate() )
+            {
+                temp = *(itr2 + 1);
+                *(itr2 + 1) = *itr2;
+                *itr2 = temp;
+            }
+        }
+    }
+    return vectorToSort;
+}
+
+void ExpensesManager::showSortedExpensesBetweenDateBorders( int downBorder, int topBorder )
+{
+
+    vector <Expense> selectedExpenses = selectExpensesBetweenBateBorders(downBorder, topBorder);
+    vector <Expense> newVect = sortExpensesVector( selectedExpenses );
+    showChosenExpenses( &newVect );
+}
+
+int ExpensesManager::sumExpensesAmountsBetweenDateBorders( int downBorder, int topBorder )
+{
+    vector <Expense> selectedExpenses = selectExpensesBetweenBateBorders(downBorder, topBorder);
+    float sumaryAmounts = 0;
+    for (vector <Expense>::iterator itr = selectedExpenses.begin(); itr != selectedExpenses.end(); itr++)
+    {
+        sumaryAmounts += itr -> getAmount();
+    }
+    return sumaryAmounts;
+}

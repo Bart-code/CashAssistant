@@ -17,7 +17,7 @@
 	"windows.h"
 	<string>
 
-1612461149 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
+1612464089 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
 	"CashAssistant.h"
 	<cstdlib>
 
@@ -43,10 +43,10 @@
 	"FileXml.h"
 	<vector>
 
-1612289954 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.cpp
+1612464186 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.cpp
 	"ExpensesManager.h"
 
-1612201440 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.h
+1612463661 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.h
 	<iostream>
 	"Expense.h"
 	"ExpensesFile.h"
@@ -69,7 +69,7 @@
 	"FileXml.h"
 	<vector>
 
-1612462574 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.cpp
+1612464186 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.cpp
 	"IncomesManager.h"
 	"AuxiliaryMethods.h"
 

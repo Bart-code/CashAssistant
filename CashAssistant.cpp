@@ -98,9 +98,20 @@ void CashAssistant::balanceSheetForCurrentMonth( void )
     string currentDate = AuxiliaryMethods::getCurrentDateTime();
     int downBorder = AuxiliaryMethods::getIntegerDateFromString( currentDate.replace( 8, 10 ,"00"));
     int topBorder = downBorder + AuxiliaryMethods::getDaysCountSelectedMonth( currentDate );
-    cout << "Down border: " << downBorder <<endl;
-    cout << "Top border: " << topBorder <<endl;
+    float incomesSummaryAmounts, expensesSummaryAmounts;
+
+    cout << endl << "Incomes: " << endl;
     incomesManager -> showSortedIncomesBetweenDateBorders( downBorder, topBorder );
-    cout << incomesManager -> sumIncomesAmountsBetweenDateBorders( downBorder, topBorder );
+    incomesSummaryAmounts = incomesManager -> sumIncomesAmountsBetweenDateBorders( downBorder, topBorder );
+
+
+    cout << endl << "Expenses: " << endl;
+    expensesManager -> showSortedExpensesBetweenDateBorders( downBorder, topBorder );
+    expensesSummaryAmounts = expensesManager -> sumExpensesAmountsBetweenDateBorders( downBorder, topBorder );
+
+    cout << endl << "Summary incomes: " << incomesSummaryAmounts << " zl" <<endl;
+    cout << "Summary expenses: " << expensesSummaryAmounts << " zl" <<endl;
+
+    cout << "Different betwen incomes and expenses: " << incomesSummaryAmounts - expensesSummaryAmounts;
     system( "pause");
 }

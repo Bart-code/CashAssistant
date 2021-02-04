@@ -59,7 +59,7 @@ void IncomesManager::showChosenIncomes( vector<Income> * vectorToShow )
        dateString = AuxiliaryMethods::getStringDateFromInteger( (*itr).getDate() );
        cout << endl << "Date: " << dateString << endl;
        cout << "Item: " << (*itr).getItem() << endl;
-       cout << "Amount: " << (*itr).getAmount() << endl << endl;
+       cout << "Amount: " << (*itr).getAmount() << " zl"<< endl << endl;
    }
 }
 

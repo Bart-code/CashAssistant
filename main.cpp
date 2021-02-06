@@ -9,6 +9,8 @@ int main()
 {
     CashAssistant cashAssistant;
     int userChoiceOption;
+    int userLoggedChoiceOption;
+
     while( true )
     {
         cashAssistant.showUserMenu();
@@ -19,8 +21,7 @@ int main()
             case 1:
                 {
                     cashAssistant.logIn();
-                    cashAssistant.incomesExpencesManagersInit();
-                    int userLoggedChoiceOption;
+                    if( cashAssistant.isUserLogged()) cashAssistant.incomesExpencesManagersInit();
                     while( cashAssistant.isUserLogged())
                     {
                         cashAssistant.showLoggedUserMenu();
@@ -48,9 +49,6 @@ int main()
                         case 7:
                                 cashAssistant.logout();
                                 break;
-                        case 8:
-                                cashAssistant.showAllLoadedIncomes();
-                                break;
                         default:
                             cout << "Your choice is not menu option" << endl;
                             system("pause");
@@ -62,10 +60,6 @@ int main()
 
             case 2:
                     cashAssistant.registration();
-                    break;
-            case 3:
-                    cashAssistant.showAllUsers();
-                    system("pause");
                     break;
             case 9:
                     exit(0);

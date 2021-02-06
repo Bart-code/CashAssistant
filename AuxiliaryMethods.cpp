@@ -105,7 +105,7 @@ int AuxiliaryMethods::getDaysCountSelectedMonth( string date )
 int AuxiliaryMethods::getLastDayDateCurrentMonth( void )
 {
     string date = getCurrentDateTime();
-    string daysCountCurrentMonth = date.substr(8,2);
+    string daysCountCurrentMonth = AuxiliaryMethods::convertIntegerToString( getDaysCountSelectedMonth( date ) );
     int dateInteger;
     date = date.replace(8,2, daysCountCurrentMonth);
     dateInteger = getIntegerDateFromString(date);

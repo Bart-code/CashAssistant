@@ -1,6 +1,5 @@
 #include "UserManager.h"
-
-
+#include "AuxiliaryMethods.h"
 
 using namespace std;
 
@@ -16,10 +15,11 @@ void UserManager::registration( void )
 
     newUser.setId( getNewUserId() );
     cout << "Enter your name : ";
-    cin >> userName;
+    cin.ignore( 1000, '\n' );
+    userName = AuxiliaryMethods::loadLine();
     newUser.setName( userName );
     cout << "Enter your surname : ";
-    cin >> userSurname;
+    userSurname = AuxiliaryMethods::loadLine();
     newUser.setSurname( userSurname );
     cout << "Enter your login : ";
     cin >> userLogin;

@@ -18,7 +18,8 @@ void IncomesManager::addIncome( int userId)
     dateString = AuxiliaryMethods::enterDate();
     if( dateString == "" ) return;
     cout << "Enter describe of income: ";
-    cin >> item;
+    cin.ignore( 1000, '\n' );
+    item = AuxiliaryMethods::loadLine();
     cout << "Enter income amount: ";
     cin >> amount;
     dateInteger = AuxiliaryMethods::getIntegerDateFromString( dateString );
@@ -29,6 +30,9 @@ void IncomesManager::addIncome( int userId)
 
     incomes.push_back( newIncome );
     incomesFile.addIncomeToFile( newIncome, userId );
+
+    cout << "Income added !" << endl;
+    Sleep(1000);
 }
 
 void IncomesManager::showAllIncomes( void )

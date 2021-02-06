@@ -16,7 +16,8 @@ void ExpensesManager::addExpense( int userId)
     dateString = AuxiliaryMethods::enterDate();
     if( dateString == "" ) return;
     cout << "Enter describe of Expense: ";
-    cin >> item;
+    cin.ignore( 1000, '\n' );
+    item = AuxiliaryMethods::loadLine();
     cout << "Enter Expense amount: ";
     cin >> amount;
     dateInteger = AuxiliaryMethods::getIntegerDateFromString( dateString );
@@ -27,6 +28,9 @@ void ExpensesManager::addExpense( int userId)
 
     expenses.push_back( newExpense );
     expensesFile.addExpenseToFile( newExpense, userId );
+
+    cout << "Expense added !" << endl;
+    Sleep(1000);
 }
 
 

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1612458937 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\main.cpp
+1612626531 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\main.cpp
 	<iostream>
 	"CashAssistant.h"
 	"IncomesManager.h"
@@ -17,11 +17,11 @@
 	"windows.h"
 	<string>
 
-1612464089 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
+1612628302 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.cpp
 	"CashAssistant.h"
 	<cstdlib>
 
-1612294712 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.h
+1612626531 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\cashassistant.h
 	<iostream>
 	"UserManager.h"
 	"IncomesManager.h"

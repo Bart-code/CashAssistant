@@ -37,8 +37,10 @@ int main()
                             cashAssistant.balanceSheetForCurrentMonth();
                                 break;
                         case 4:
+                            cashAssistant.balanceSheetForPreviousMonth();
                                 break;
                         case 5:
+                            cashAssistant.balanceSheetForCustomPeriod();
                                 break;
                         case 6:
                             cashAssistant.changePassword();

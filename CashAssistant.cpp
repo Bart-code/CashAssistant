@@ -93,11 +93,9 @@ void CashAssistant::changePassword( void )
     userManager.changePassword();
 }
 
-void CashAssistant::balanceSheetForCurrentMonth( void )
+void CashAssistant::balanceSheetForSelectedDateBorders( int downBorder, int topBorder )
 {
-    string currentDate = AuxiliaryMethods::getCurrentDateTime();
-    int downBorder = AuxiliaryMethods::getIntegerDateFromString( currentDate.replace( 8, 10 ,"00"));
-    int topBorder = downBorder + AuxiliaryMethods::getDaysCountSelectedMonth( currentDate );
+
     float incomesSummaryAmounts, expensesSummaryAmounts;
 
     cout << endl << "Incomes: " << endl;
@@ -112,6 +110,61 @@ void CashAssistant::balanceSheetForCurrentMonth( void )
     cout << endl << "Summary incomes: " << incomesSummaryAmounts << " zl" <<endl;
     cout << "Summary expenses: " << expensesSummaryAmounts << " zl" <<endl;
 
-    cout << "Different betwen incomes and expenses: " << incomesSummaryAmounts - expensesSummaryAmounts;
+    cout << "Different betwen incomes and expenses: " << incomesSummaryAmounts - expensesSummaryAmounts << " zl" <<endl;
     system( "pause");
 }
+
+void CashAssistant::balanceSheetForCurrentMonth( void )
+{
+    string currentDate = AuxiliaryMethods::getCurrentDateTime();
+    int downBorder = AuxiliaryMethods::getIntegerDateFromString( currentDate.replace( 8, 10 ,"00"));
+    int topBorder = downBorder + AuxiliaryMethods::getDaysCountSelectedMonth( currentDate );
+    balanceSheetForSelectedDateBorders( downBorder, topBorder);
+}
+
+void CashAssistant::balanceSheetForPreviousMonth( void )
+{
+    string currentDate = AuxiliaryMethods::getCurrentDateTime();
+    string monthFromCurrentDate = currentDate.substr(4,2);
+
+    int downBorder = AuxiliaryMethods::getIntegerDateFromString( currentDate.replace( 8, 10 ,"00")); //20120124
+    if( monthFromCurrentDate == "01" )
+    {
+        downBorder-=8900;
+    }
+    else
+    {
+        downBorder-=100;
+    }
+    int topBorder = downBorder + AuxiliaryMethods::getDaysCountSelectedMonth( currentDate );
+    balanceSheetForSelectedDateBorders( downBorder, topBorder);
+}
+
+void CashAssistant::balanceSheetForCustomPeriod( void )
+{
+    string customDownBorder;
+    string customTopBorder;
+
+    cout << "Enter down border: ";
+    cin >> customDownBorder;
+    if( !AuxiliaryMethods::isDateCorrect( customDownBorder ))
+    {
+        cout << "Wrong date format !" << endl;
+        system("pause");
+        return;
+    }
+    cout << "Enter top border: ";
+    cin >> customTopBorder;
+    if( !AuxiliaryMethods::isDateCorrect( customTopBorder ))
+    {
+        cout << "Wrong date format !" << endl;
+        system("pause");
+        return;
+    }
+
+    int downBorder = AuxiliaryMethods::getIntegerDateFromString( customDownBorder);
+    int topBorder = AuxiliaryMethods::getIntegerDateFromString( customTopBorder);
+    balanceSheetForSelectedDateBorders( downBorder, topBorder);
+}
+
+

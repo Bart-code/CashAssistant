@@ -103,7 +103,7 @@ void ExpensesManager::showSortedExpensesBetweenDateBorders( int downBorder, int 
     showChosenExpenses( &newVect );
 }
 
-int ExpensesManager::sumExpensesAmountsBetweenDateBorders( int downBorder, int topBorder )
+float ExpensesManager::sumExpensesAmountsBetweenDateBorders( int downBorder, int topBorder )
 {
     vector <Expense> selectedExpenses = selectExpensesBetweenBateBorders(downBorder, topBorder);
     float sumaryAmounts = 0;

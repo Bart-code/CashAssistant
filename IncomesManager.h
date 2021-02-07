@@ -22,7 +22,7 @@ public:
     void showChosenIncomes( vector<Income> * vectorToShow );
     vector <Income> selectIncomesBetweenBateBorders( int , int );
     void showSortedIncomesBetweenDateBorders( int , int );
-    int sumIncomesAmountsBetweenDateBorders( int , int );
+    float sumIncomesAmountsBetweenDateBorders( int , int );
     vector <Income> sortIncomesVector( vector <Income> );
 };
 

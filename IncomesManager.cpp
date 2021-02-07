@@ -104,7 +104,7 @@ void IncomesManager::showSortedIncomesBetweenDateBorders( int downBorder, int to
     showChosenIncomes( &newVect );
 }
 
-int IncomesManager::sumIncomesAmountsBetweenDateBorders( int downBorder, int topBorder )
+float IncomesManager::sumIncomesAmountsBetweenDateBorders( int downBorder, int topBorder )
 {
     vector <Income> selectedIncomes = selectIncomesBetweenBateBorders(downBorder, topBorder);
     float sumaryAmounts = 0;

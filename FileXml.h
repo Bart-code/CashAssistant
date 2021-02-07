@@ -12,7 +12,6 @@ class FileXml
 public:
      CMarkup initFile( string );
 
-
 };
 
 #endif

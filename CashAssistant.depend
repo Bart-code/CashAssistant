@@ -43,10 +43,10 @@
 	"FileXml.h"
 	<vector>
 
-1612630771 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.cpp
+1612713230 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.cpp
 	"ExpensesManager.h"
 
-1612463661 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.h
+1612713230 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\expensesmanager.h
 	<iostream>
 	"Expense.h"
 	"ExpensesFile.h"
@@ -69,11 +69,11 @@
 	"FileXml.h"
 	<vector>
 
-1612630836 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.cpp
+1612711725 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.cpp
 	"IncomesManager.h"
 	"AuxiliaryMethods.h"
 
-1612462464 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.h
+1612711725 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\incomesmanager.h
 	<iostream>
 	<vector>
 	"Income.h"
@@ -107,7 +107,7 @@
 1611418581 source:e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\filexml.cpp
 	"FileXml.h"
 
-1611419189 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\filexml.h
+1612711725 e:\programowanie\code_bloks\codeblocks\projekty\cashassistant\filexml.h
 	<iostream>
 	"Markup.h"
 
